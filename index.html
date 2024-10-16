@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance to Excel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Tracker</h1>
+        <form id="attendance-form">
+            <input type="text" id="employeeName" placeholder="Employee Name" required>
+            <input type="text" id="employeeId" placeholder="Employee ID" required>
+            <input type="date" id="attendanceDate" required>
+            <select id="attendanceStatus" required>
+                <option value="">Select Status</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button type="submit">Add Attendance</button>
+        </form>
+        <button id="download-btn">Download Excel</button>
+        <table id="attendance-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
